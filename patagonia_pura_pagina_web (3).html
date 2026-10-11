@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Patagonia Pura: construcción de pozos profundos, purificación de agua potable y sistemas de dosificación en Puerto Montt, Los Lagos y Los Ríos.">
+<title>Patagonia Pura | Soluciones en Agua</title>
+<style>
+:root{--blue:#0759a8;--deep:#06325c;--aqua:#eaf6ff;--green:#29a35a;--ink:#17324d;--muted:#587087;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #082c4d12}.nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:76px}.brand{display:flex;align-items:center;gap:10px;color:var(--blue);font-weight:800;font-size:1.15rem;line-height:1.1}.drop{width:42px;height:48px;background:linear-gradient(150deg,#0a68bd,#25a85b);clip-path:polygon(50% 0,85% 42%,100% 67%,87% 88%,66% 100%,35% 100%,12% 86%,0 66%,16% 40%);position:relative}.brand small{display:block;font-size:.72rem;font-weight:500;color:var(--muted);margin-top:5px}.navlinks{display:flex;gap:25px;font-size:.92rem;font-weight:700}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;padding:13px 21px;border-radius:999px;font-weight:700;border:0;cursor:pointer;transition:.2s}.btn:hover{background:#03447f;transform:translateY(-1px)}.btn.outline{background:transparent;color:var(--blue);border:1px solid var(--blue)}
+.hero{color:white;background:linear-gradient(90deg,#032e58ee 0%,#0759a8b8 52%,#032e5830 100%),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=2000&q=85') center/cover;min-height:560px;display:flex;align-items:center}.hero-content{padding:80px 0;max-width:690px}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:.78rem;font-weight:800;color:#55c2ff}.hero h1{font-size:clamp(2.5rem,5.4vw,4.5rem);line-height:1.04;margin:14px 0}.hero h2{font-size:clamp(1.3rem,2.4vw,2rem);margin:0 0 16px}.hero p{font-size:1.1rem;max-width:590px;color:#eef8ff}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero .outline{color:#fff;border-color:#fff}
+section{padding:76px 0}.section-head{max-width:690px;margin-bottom:32px}.section-head h2{font-size:clamp(1.8rem,3vw,2.65rem);line-height:1.15;margin:8px 0 12px;color:var(--deep)}.section-head p{color:var(--muted);margin:0}.services{background:#f7fbff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:#fff;border:1px solid #dceaf5;border-radius:16px;overflow:hidden;box-shadow:0 8px 24px #0a45700b}.card-top{height:175px;background:linear-gradient(135deg,#0b5eaa,#4cb5e5);display:flex;align-items:center;justify-content:center;color:white;font-size:3.4rem}.card:nth-child(2) .card-top{background:linear-gradient(135deg,#0879a8,#4cc6cb)}.card:nth-child(3) .card-top{background:linear-gradient(135deg,#0759a8,#4c8ee5)}.card-body{padding:25px}.card h3{color:var(--deep);font-size:1.25rem;margin:0 0 10px}.card p{color:var(--muted);margin:0 0 15px}.card ul{padding-left:19px;margin:0;color:#35536c}.card li{padding:3px 0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.about-visual{min-height:360px;border-radius:20px;background:linear-gradient(135deg,#0759a8cc,#0a9bb2aa),url('https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=80') center/cover;display:flex;align-items:flex-end;padding:28px;color:#fff}.about-visual strong{font-size:1.6rem;max-width:300px;line-height:1.2}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}.benefit{border-left:3px solid var(--green);padding:4px 0 4px 14px}.benefit strong{display:block;color:var(--deep)}.benefit span{font-size:.9rem;color:var(--muted)}.steps{background:var(--aqua)}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border-radius:14px;padding:24px}.num{width:42px;height:42px;display:grid;place-items:center;background:var(--blue);color:white;border-radius:50%;font-weight:800;margin-bottom:12px}.step h3{margin:0 0 7px;color:var(--deep)}.step p{margin:0;color:var(--muted)}.contact{background:linear-gradient(120deg,#052e56,#0875ba);color:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}.contact h2{font-size:2.3rem;line-height:1.15;margin:10px 0}.contact p{color:#dcefff}.contact-detail{margin-top:24px;display:grid;gap:12px}.contact-detail a,.contact-detail div{display:flex;gap:12px;align-items:center}.contact-form{background:#fff;color:var(--ink);border-radius:16px;padding:28px;box-shadow:0 16px 40px #001d3928}.contact-form h3{margin:0 0 18px;color:var(--deep)}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.contact-form input,.contact-form select,.contact-form textarea{width:100%;font:inherit;padding:12px;border:1px solid #cbdce9;border-radius:8px;background:#fbfdff}.contact-form textarea{min-height:120px;resize:vertical;grid-column:1/-1}.contact-form .full{grid-column:1/-1}.contact-form small{display:block;color:var(--muted);margin-top:10px}.contact-form button{width:100%;margin-top:14px}footer{background:#03213d;color:#d6e8f6;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap}footer small{color:#9eb9ce}.mobile-cta{display:none}
+@media(max-width:850px){.navlinks{display:none}.cards{grid-template-columns:1fr}.card-top{height:135px}.about-grid,.contact-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.hero{min-height:510px}.hero-content{padding:60px 0}.mobile-cta{display:block;position:fixed;bottom:12px;left:4%;width:92%;z-index:20;text-align:center;box-shadow:0 6px 24px #001c3880}.contact{padding-bottom:90px}}
+@media(max-width:520px){.brand{font-size:1rem}.drop{width:34px;height:40px}.nav{min-height:68px}.nav>.btn{padding:10px 13px;font-size:.85rem}.hero h1{font-size:2.55rem}.hero p{font-size:1rem}.benefits,.formgrid{grid-template-columns:1fr}.contact-form textarea,.contact-form .full{grid-column:auto}section{padding:55px 0}.contact h2{font-size:1.9rem}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#inicio" aria-label="Patagonia Pura inicio"><span class="drop"></span><span>PATAGONIA PURA<small>Soluciones en Agua</small></span></a>
+  <nav class="navlinks" aria-label="Navegación principal"><a href="#inicio">Inicio</a><a href="#servicios">Servicios</a><a href="#nosotros">Nosotros</a><a href="#proceso">Cómo trabajamos</a><a href="#contacto">Contacto</a></nav>
+  <a class="btn" href="#contacto">Solicitar cotización</a>
+ </div>
+</header>
+<main>
+<section class="hero" id="inicio">
+ <div class="wrap"><div class="hero-content">
+  <div class="eyebrow">Agua para hogares, empresas y comunidades</div>
+  <h1>Construcción de pozos profundos</h1>
+  <h2>Purificación de agua potable y sistemas de dosificación</h2>
+  <p>Soluciones integrales para la captación, tratamiento y distribución del agua, adaptadas a las necesidades de parcelas, viviendas, empresas y comités de Agua Potable Rural.</p>
+  <div class="hero-actions"><a class="btn" href="#contacto">Solicita tu cotización&nbsp; →</a><a class="btn outline" href="#servicios">Conoce nuestros servicios</a></div>
+ </div></div>
+</section>
+<section class="services" id="servicios">
+ <div class="wrap">
+  <div class="section-head"><div class="eyebrow">Nuestros servicios</div><h2>Soluciones completas para el manejo del agua</h2><p>Te acompañamos desde la evaluación inicial hasta la puesta en marcha y el mantenimiento de tu sistema.</p></div>
+  <div class="cards">
+   <article class="card"><div class="card-top" aria-hidden="true">◉</div><div class="card-body"><h3>Construcción de pozos profundos</h3><p>Captación de agua subterránea para proyectos residenciales, rurales y productivos.</p><ul><li>Pozos de distintos diámetros y profundidades</li><li>Entubación en acero carbono y PVC según proyecto</li><li>Bomba sumergible y sistema de impulsión</li><li>Pruebas de bombeo y evaluación de caudal</li><li>Inspección técnica con cámara, según disponibilidad</li></ul></div></article>
+   <article class="card"><div class="card-top" aria-hidden="true">💧</div><div class="card-body"><h3>Purificación de agua potable</h3><p>Tratamiento diseñado según las características del agua y el uso requerido.</p><ul><li>Filtración de sedimentos</li><li>Tratamiento de hierro y manganeso cuando corresponda</li><li>Filtros de carbón y ablandadores</li><li>Orientación para análisis de agua</li><li>Diseño y montaje de trenes de tratamiento</li></ul></div></article>
+   <article class="card"><div class="card-top" aria-hidden="true">⚙</div><div class="card-body"><h3>Sistemas de dosificación</h3><p>Equipos para dosificar productos de tratamiento con control y seguridad.</p><ul><li>Bombas dosificadoras</li><li>Sistemas para hipoclorito de sodio o calcio</li><li>Estanques y accesorios de dosificación</li><li>Automatización y control, según requerimientos</li><li>Asesoría técnica y mantenimiento</li></ul></div></article>
+  </div>
+ </div>
+</section>
+<section id="nosotros">
+ <div class="wrap about-grid">
+  <div class="about-visual"><strong>Agua segura y soluciones pensadas para cada proyecto.</strong></div>
+  <div><div class="eyebrow">Quiénes somos</div><h2>Experiencia, compromiso y atención personalizada</h2><p>En Patagonia Pura SpA trabajamos en soluciones para la captación, tratamiento y distribución de agua. Evaluamos las necesidades de cada cliente para proponer sistemas prácticos y adecuados a las condiciones del proyecto.</p><div class="benefits"><div class="benefit"><strong>Soluciones a medida</strong><span>Propuestas según uso, caudal y calidad del agua.</span></div><div class="benefit"><strong>Asesoría técnica</strong><span>Orientación durante las distintas etapas del proyecto.</span></div><div class="benefit"><strong>Enfoque rural y productivo</strong><span>Atención a parcelas, empresas y comités APR.</span></div><div class="benefit"><strong>Compromiso con el agua</strong><span>Buenas prácticas para el manejo responsable del recurso.</span></div></div></div>
+ </div>
+</section>
+<section class="steps" id="proceso">
+ <div class="wrap"><div class="section-head"><div class="eyebrow">Cómo trabajamos</div><h2>Tu proyecto, paso a paso</h2><p>Un proceso claro para entender tus necesidades y definir una solución adecuada.</p></div>
+  <div class="steps-grid"><article class="step"><div class="num">1</div><h3>Cuéntanos tu necesidad</h3><p>Indícanos ubicación, uso del agua, caudal estimado y características del terreno o instalación.</p></article><article class="step"><div class="num">2</div><h3>Evaluación y propuesta</h3><p>Revisamos los antecedentes disponibles y preparamos una propuesta técnica y económica.</p></article><article class="step"><div class="num">3</div><h3>Implementación y apoyo</h3><p>Coordinamos los trabajos, equipos y recomendaciones de operación y mantenimiento.</p></article></div>
+ </div>
+</section>
+<section class="contact" id="contacto">
+ <div class="wrap contact-grid">
+  <div><div class="eyebrow">Hablemos de tu proyecto</div><h2>¿Necesitas un pozo profundo o un sistema de tratamiento de agua?</h2><p>Contáctanos para conversar sobre tu proyecto y solicitar una cotización. Atención en Puerto Montt y zonas de las regiones de Los Lagos y Los Ríos, según evaluación.</p>
+   <div class="contact-detail"><a href="tel:+56947476768"><span>☎</span><span><strong>+56 9 4747 6768</strong><br><small>Contacto telefónico</small></span></a><a href="mailto:purapatagonia4@gmail.com"><span>✉</span><span><strong>purapatagonia4@gmail.com</strong><br><small>Correo de cotizaciones</small></span></a><div><span>⌖</span><span><strong>Santa Inés 1070</strong><br><small>Puerto Montt, Región de Los Lagos</small></span></div></div>
+  </div>
+  <form class="contact-form" id="quoteForm"><h3>Solicita una cotización</h3><div class="formgrid">
+   <input id="nombre" name="nombre" placeholder="Nombre y apellido" aria-label="Nombre y apellido" required>
+   <input id="telefono" name="telefono" placeholder="Teléfono de contacto" aria-label="Teléfono de contacto">
+   <input id="correo" name="correo" type="email" placeholder="Correo electrónico" aria-label="Correo electrónico" required>
+   <select id="servicio" name="servicio" aria-label="Servicio de interés" required><option value="">Servicio de interés</option><option>Construcción de pozo profundo</option><option>Purificación de agua potable</option><option>Sistema de dosificación</option><option>Mantención o asesoría técnica</option><option>Otro proyecto</option></select>
+   <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto, ubicación y necesidades" aria-label="Mensaje" required></textarea>
+   <button class="btn full" type="submit">Enviar solicitud por correo →</button>
+  </div><small>Al enviar, se abrirá tu aplicación de correo con los datos completados para que puedas revisarlos y enviarlos.</small></form>
+ </div>
+</section>
+</main>
+<footer><div class="wrap footer-row"><a class="brand" href="#inicio" style="color:white"><span class="drop"></span><span>PATAGONIA PURA<small style="color:#c5dced">Soluciones en Agua</small></span></a><small>© <span id="year">2026</span> Patagonia Pura SpA. Todos los derechos reservados.</small><a href="#inicio">Volver arriba ↑</a></div></footer>
+<a class="btn mobile-cta" href="#contacto">Solicitar cotización</a>
+<script>
+document.getElementById('quoteForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const get=id=>document.getElementById(id).value.trim();
+ const subject=encodeURIComponent('Solicitud de cotización - Patagonia Pura');
+ const body=encodeURIComponent('Hola Patagonia Pura,\n\nQuisiera solicitar información/cotización.\n\nNombre: '+get('nombre')+'\nTeléfono: '+get('telefono')+'\nCorreo: '+get('correo')+'\nServicio: '+get('servicio')+'\n\nDetalles del proyecto:\n'+get('mensaje')+'\n\nSaludos.');
+ window.location.href='mailto:purapatagonia4@gmail.com?subject='+subject+'&body='+body;
+});
+</script>
+</body>
+</html>
